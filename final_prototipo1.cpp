@@ -58,7 +58,23 @@ void loop() {
         lcd.clear(); 
       }
   }
-  
+
+  if(t.hr==17 && t.min==33){
+        lcd.setCursor(0, 1);
+        lcd.print("Buenos días :)");
+        lcd.clear(); 
+  }
+  if(t.hr==17 && t.min==33){
+        lcd.setCursor(0, 1);
+        lcd.print("Buenas Tardes :)");
+        lcd.clear(); 
+  }
+  if(t.hr==17 && t.min==33){
+        lcd.setCursor(0, 1);
+        lcd.print("Buenas noches :)");
+        lcd.clear(); 
+  }
+
   Serial.print("valor leido en A0:");  
   Serial.println(voltaje_hm);
   Serial.print(t.yr);
